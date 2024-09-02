@@ -742,6 +742,7 @@ public with sharing class SOQLTest {
         SOQL.setPrimaryContact();
 
         // Query for the updated Opportunity
+        // HINT: The repository has the primary contact field. You will need to figure out how to deploy it force-app\main\default\objects\Opportunity\fields\Primary_Contact__c.field-meta.xml
         Opportunity updatedOpp = [SELECT Id, Primary_Contact__c FROM Opportunity WHERE Id = :testOpp1.Id];
 
         // Assert that the Primary Contact was set correctly

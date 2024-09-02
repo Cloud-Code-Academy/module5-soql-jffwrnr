@@ -157,7 +157,7 @@ public with sharing class SOQL {
     /**
      * Question 12
      * Returns the total revenue for all Opportunities in a specific Stage or if the amount is greater than 10000.
-     * Example: getTotalRevenueByStage('Closed Won') should return the total revenue for all Opportunities in the 'Closed Won' Stage.
+     * Example: getTotalRevenueByStage('Closed Won') should return the total revenue for the found opportunities
      * @param stage The Stage value to filter Opportunities.
      * @return The total revenue.
      */
